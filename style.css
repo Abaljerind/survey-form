@@ -35,7 +35,7 @@ body {
 
 form {
   margin: 40px auto 0 auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   max-width: 600px;
   min-width: 350px;
   width: 60vw;
@@ -56,4 +56,18 @@ select {
 input,
 select {
   width: 100%;
+}
+
+label,
+legend {
+  font-size: 1.1rem;
+}
+
+fieldset {
+  border-style: none;
+  margin-top: 30px;
+}
+
+legend {
+  margin-left: -15px;
 }
