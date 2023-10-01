@@ -31,3 +31,13 @@ body {
   font-style: italic;
   font-weight: 300;
 }
+
+form {
+  margin: 40px auto 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  min-width: 350px;
+  width: 60vw;
+  padding: 25px 25px 45px 25px;
+  border-radius: 10px;
+}
