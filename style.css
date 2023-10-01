@@ -42,3 +42,18 @@ form {
   padding: 25px 25px 45px 25px;
   border-radius: 10px;
 }
+
+label,
+input,
+textarea,
+select {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-height: 2em;
+}
+
+input,
+select {
+  width: 100%;
+}
