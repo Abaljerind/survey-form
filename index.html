@@ -8,11 +8,138 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Survey Form</h1>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">
-      Thanks for filling in our survey, we'll keep responses anonymous.
+      Thank you for taking the time to help us improve the platform
     </p>
 
-    <form action="" id="survey-form"></form>
+    <form action="" id="survey-form">
+      <label for="name-label"
+        >Name
+        <input
+          type="text"
+          name="name"
+          id="name-label"
+          required
+          placeholder="Enter your name"
+      /></label>
+
+      <label for="email-label"
+        >Email
+        <input
+          type="email"
+          name="email"
+          id="email-label"
+          pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"
+          required
+          placeholder="Enter your Email"
+      /></label>
+
+      <label for="number-label"
+        >Age (optional)
+        <input
+          type="number"
+          name="number"
+          id="number-label"
+          pattern="[0-9]"
+          min="10"
+          max="99"
+          placeholder="Age"
+      /></label>
+
+      <label for="role-label"
+        >Which option best describes your current role?
+        <select name="role" id="role-label">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend</legend>
+        <label for="definitely"
+          ><input type="radio" name="recommend" id="definitely" />
+          Definitely</label
+        >
+        <label for="maybe"
+          ><input type="radio" name="recommend" id="maybe" /> Maybe</label
+        >
+        <label for="not_sure"
+          ><input type="radio" name="recommend" id="not_sure" /> Not Sure</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          What would you like to see improved? (Check all that apply)
+        </legend>
+
+        <label for="frontend"
+          ><input
+            type="checkbox"
+            name="frontend"
+            id="frontend"
+            value="frontend"
+          />
+          Front-end Projects</label
+        >
+
+        <label for="backend">
+          <input type="checkbox" name="backend" id="backend" value="backend" />
+          Back-end Projects
+        </label>
+
+        <label for="database">
+          <input
+            type="checkbox"
+            name="database"
+            id="database"
+            value="database"
+          />
+          Database MySQL
+        </label>
+
+        <label for="challenges">
+          <input
+            type="checkbox"
+            name="challenges"
+            id="challenges"
+            value="challenges"
+          />
+          Challenges
+        </label>
+
+        <label for="forum">
+          <input type="checkbox" name="forum" id="forum" value="forum" /> Forum
+        </label>
+
+        <label for="course">
+          <input
+            type="checkbox"
+            name="course"
+            id="course"
+            value="additional_course"
+          />
+          Additional Course
+        </label>
+      </fieldset>
+
+      <label for="comments">
+        Any comments or suggestions?
+        <textarea
+          name="comment"
+          id="comment"
+          cols="50"
+          rows="3"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </label>
+
+      <button type="submit" value="submit">Submit</button>
+    </form>
   </body>
 </html>
