@@ -27,3 +27,53 @@ body {
   font-style: italic;
   font-size: 1.1rem;
 }
+
+form {
+  margin: 0 auto 0 auto;
+  min-width: 350px;
+  max-width: 950px;
+  width: 70vw;
+  padding: 30px 30px 50px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+label,
+select,
+option,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  display: block;
+  font-size: 1.15rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 99%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  min-height: 2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  border-radius: 5px;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* masih ga bisa, coba perbaiki */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder {
+  text-indent: 10px;
+  font-size: 1rem;
+}
