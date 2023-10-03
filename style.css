@@ -14,6 +14,7 @@ body {
   /* sampai sini. */
 }
 
+/* title & description */
 #title {
   text-align: center;
   padding-top: 35px;
@@ -28,6 +29,7 @@ body {
   font-size: 1.1rem;
 }
 
+/* form */
 form {
   margin: 35px auto 0 auto;
   min-width: 350px;
@@ -38,6 +40,7 @@ form {
   border-radius: 15px;
 }
 
+/* seluruh isi form */
 label,
 select,
 option,
@@ -58,6 +61,13 @@ input[type="number"] {
   min-height: 2em;
 }
 
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder {
+  text-indent: 10px;
+  font-size: 1rem;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -72,11 +82,4 @@ label {
 
 span {
   color: salmon;
-}
-
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-input[type="number"]::placeholder {
-  text-indent: 10px;
-  font-size: 1rem;
 }
