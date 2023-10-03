@@ -5,6 +5,8 @@ body {
   width: 100%;
   height: 100vh;
   /* css style untuk cover dari sini */
+  background-image: -webkit-linear-gradient(navy, grey),
+    url("./img/survey-background.jpg");
   background-image: linear-gradient(navy, grey),
     url("./img/survey-background.jpg");
   background-size: cover;
@@ -61,6 +63,27 @@ input[type="number"] {
   min-height: 2em;
 }
 
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder {
+  text-indent: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder {
+  text-indent: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder {
+  text-indent: 10px;
+  font-size: 1rem;
+}
+
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="number"]::placeholder {
@@ -80,8 +103,8 @@ input[type="number"] {
 }
 
 /* stars for text & email input */
-label[for="name-label"]::before,
-label[for="email-label"]::before {
+label[for="name-label"]:before,
+label[for="email-label"]:before {
   content: "*";
   color: red;
 }
@@ -129,6 +152,24 @@ textarea {
   margin-bottom: 20px;
   height: 8em;
   width: 99%;
+}
+
+textarea::-webkit-input-placeholder {
+  text-indent: 5px;
+  font-size: 1rem;
+  padding-top: 2px;
+}
+
+textarea::-moz-placeholder {
+  text-indent: 5px;
+  font-size: 1rem;
+  padding-top: 2px;
+}
+
+textarea:-ms-input-placeholder {
+  text-indent: 5px;
+  font-size: 1rem;
+  padding-top: 2px;
 }
 
 textarea::placeholder {
