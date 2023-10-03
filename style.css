@@ -95,13 +95,13 @@ select {
   padding-left: 5px;
   border-radius: 5px;
   color: grey;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* recommend section */
 fieldset {
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 legend {
@@ -113,3 +113,5 @@ input[type="radio"] {
   margin-left: -12px;
   margin-bottom: 10px;
 }
+
+/* improved section */
