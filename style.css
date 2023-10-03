@@ -97,3 +97,19 @@ select {
   color: grey;
   margin-bottom: 30px;
 }
+
+/* recommend section */
+fieldset {
+  border: none;
+  margin-bottom: 30px;
+}
+
+legend {
+  font-size: 1.2rem;
+  margin-left: -15px;
+}
+
+input[type="radio"] {
+  margin-left: -12px;
+  margin-bottom: 10px;
+}
