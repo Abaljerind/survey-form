@@ -116,3 +116,16 @@ input[type="checkbox"] {
 }
 
 /* comments / suggestion */
+textarea {
+  margin-top: 10px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+textarea::placeholder {
+  text-indent: 5px;
+  font-size: 1rem;
+  padding-top: 2px;
+}
+
+/* button */
