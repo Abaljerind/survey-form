@@ -70,7 +70,10 @@ label {
   font-weight: bold;
 }
 
-/* masih ga bisa, coba perbaiki */
+span {
+  color: salmon;
+}
+
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="number"]::placeholder {
