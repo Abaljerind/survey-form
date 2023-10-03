@@ -109,9 +109,10 @@ legend {
   margin-left: -15px;
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
   margin-left: -12px;
   margin-bottom: 10px;
 }
 
-/* improved section */
+/* comments / suggestion */
