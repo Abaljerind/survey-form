@@ -79,6 +79,13 @@ input[type="number"] {
   margin-bottom: 30px;
 }
 
+/* stars for text & email input */
+label[for="name-label"]::before,
+label[for="email-label"]::before {
+  content: "*";
+  color: red;
+}
+
 label {
   font-size: 1.2rem;
 }
