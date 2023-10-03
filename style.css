@@ -120,6 +120,8 @@ textarea {
   margin-top: 10px;
   resize: vertical;
   margin-bottom: 20px;
+  height: 10em;
+  width: 99%;
 }
 
 textarea::placeholder {
